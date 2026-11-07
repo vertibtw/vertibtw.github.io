@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Scientifica;
+  src: url(fonts/scientifica-bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: NerdFontsSymbols;
+  src: url(fonts/nerd-icons.woff2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 12px;
+  background: teal;
+  font: 14px/1.5 Tahoma, sans-serif;
+}
+
+main,
+.btn {
+  background: silver;
+  border: 2px solid;
+  border-color: #fff #444 #444 #fff;
+}
+
+main {
+  width: min(100%, 400px);
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  padding: 0 2px 0 4px;
+  background: navy;
+  color: #fff;
+  border-bottom: 1px solid #000;
+  font: 700 12px/1 Tahoma, sans-serif;
+}
+
+.titlebar > div {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+}
+
+.btn {
+  border-radius: 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn:active {
+  border-color: #444 #fff #fff #444;
+  padding: 2px 0 0 2px; 
+}
+
+.btn:focus-visible {
+  outline: 1px dotted;
+}
+
+.ctrl,
+nav a {
+  display: grid;
+  place-items: center;
+}
+
+.ctrl {
+  width: 18px;
+  height: 16px;
+  padding: 0;
+  font: 12px/1 Tahoma, sans-serif;
+}
+
+.content {
+  padding: 20px 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+header img {
+  flex: none;
+  width: 68px;
+  height: 68px;
+  border: 2px solid;
+  border-color: #444 #fff #fff #444;
+}
+
+header p {
+  margin: 5px 0 0;
+  color: #444;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font: 700 32px/1 Scientifica, monospace;
+}
+
+.normal-text {
+  margin: 20px 0 0;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+nav a {
+  width: 44px;
+  height: 44px;
+  color: navy;
+  font: 700 16px Tahoma, sans-serif;
+}
+
+nav a:not(:last-child) {
+  font: 20px/1 NerdFontsSymbols;
+}
