@@ -124,9 +124,5 @@ nav a {
   width: 44px;
   height: 44px;
   color: navy;
-  font: 700 16px Tahoma, sans-serif;
-}
-
-nav a:not(:last-child) {
-  font: 20px/1 NerdFontsSymbols;
+  font: 20px/1 NerdFontsSymbols, Tahoma, sans-serif;
 }
